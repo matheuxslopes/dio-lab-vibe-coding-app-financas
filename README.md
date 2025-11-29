@@ -332,7 +332,8 @@ Resultado final com o Lovable: https://coin-convos.lovable.app
 
 
 Resumo:
-  Um app de finanças pessoais que transforma o controle financeiro em uma experiência conversacional. Em vez de formulários e planilhas, você registra seus gastos falando com o app, que classifica automaticamente as transações, mostra resumos claros e sugere formas simples de economizar. Ideal para quem quer começar a organizar suas finanças sem complicação.
+
+Um app de finanças pessoais que transforma o controle financeiro em uma experiência conversacional. Em vez de formulários e planilhas, você registra seus gastos falando com o app, que classifica automaticamente as transações, mostra resumos claros e sugere formas simples de economizar. Ideal para quem quer começar a organizar suas finanças sem complicação.
 
 ✅ Funcionalidades
 1. Registro de gastos via chat
