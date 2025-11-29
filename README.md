@@ -1,89 +1,373 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 AppChat de Finanças Pessoais com Vibe Coding
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+PRD Refinado no M365 Copilot
 
-## ✨ O que é Vibe Coding
-
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
-
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
-
-## 🎯 Desafio
-
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
-
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
-
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
-
-## 🪄 Etapas do Desafio
-
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
-
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
-
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
-
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
-
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
-
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
-
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
-
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
 ```
+APP: Finanças Conversacionais (MVP)
+Autor: Matheus
+Versão: 0.1 (MVP)
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+============================================================
+1) VISÃO GERAL
+============================================================
+Contexto:
+App de finanças pessoais controlado por conversas em linguagem natural, com registro simples de gastos, categorização automática, resumo de saldo e dicas de economia.
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+Problema:
+Apps comuns exigem entradas complexas (formulários, telas rígidas), pouca personalização, gerando desistência.
 
-### 2. Explorando o Lovable na Prática
+Solução:
+Experiência conversacional + IA para entender frases como “Gastei R$50 no mercado” e sugerir ações.
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+Objetivo do Produto:
+Facilitar o registro de gastos e acompanhamento financeiro via chat, com recomendações básicas.
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+Público-Alvo:
+Iniciantes em organização financeira que querem praticidade e linguagem acessível.
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+Diferencial:
+Conversas naturais + recomendações simples, focado em quem está começando.
 
-### 3. Entregando o Desafio na DIO
+============================================================
+2) FUNCIONALIDADES-CHAVE (MVP)
+============================================================
+1. Registro de gastos via chat (PT-BR):
+   - Ex.: “Gastei R$50 no mercado”, “Paguei R$120 de energia”.
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+2. Classificação automática das transações:
+   - “Mercado” → Alimentação; “Uber” → Transporte; “Energia” → Moradia; etc.
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+3. Visualização simples do saldo e categorias (no chat):
+   - Resumo semanal/mensal; “Como está meu gasto esta semana?”
 
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
+4. Sugestões básicas de economia:
+   - Ex.: “Você gastou 35% acima da média em Alimentação; que tal definir um limite de R$300/semana?”
 
-## 💬 Conclusão
+(Futuro: metas financeiras, relatórios avançados, agente financeiro com dicas personalizadas.)
 
-Vibe Coding é sobre clareza, curiosidade e criatividade, não sobre perfeição técnica. O verdadeiro objetivo aqui é aprender a pensar junto com a IA, transformando ideias em conceitos reais e enxergando a tecnologia como uma extensão do seu raciocínio criativo. Cada interação é um experimento, quanto mais clara for sua intenção, mais surpreendente será o resultado.
+============================================================
+3) FLUXO DO USUÁRIO (MVP)
+============================================================
+Tela inicial → Chat → Usuário digita gasto → App responde com:
+   (a) categoria detectada,
+   (b) saldo atualizado/resumo rápido,
+   (c) sugestão simples de economia (se aplicável).
+
+============================================================
+4) DIRETRIZES DE DESIGN
+============================================================
+Estilo: Minimalista, limpo, universal.
+Paleta: Branco/cinza claro + azul ou verde para ações positivas.
+Tipografia: Inter, Roboto ou SF Pro.
+Componentes: Chat com balões arredondados, ícones Material Icons.
+Acessibilidade: Contraste adequado, botões grandes, foco visível, feedback textual.
+Tom visual: Educativo e amigável.
+
+============================================================
+5) MÉTRICAS DE SUCESSO
+============================================================
+- % de usuários que registram ≥5 gastos na primeira semana.
+- Retenção em 30 dias.
+- Engajamento no chat (interações/semana por usuário).
+- (Opcional) % de mensagens corretamente classificadas pelo NLP.
+
+============================================================
+6) PLANO DE VALIDAÇÃO
+============================================================
+Hipótese: Usuários preferem registrar gastos via chat do que via formulário.
+Teste: Landing page + protótipo de chat → medir conversão, tempo até 1º registro, e feedback qualitativo (NPS curto e entrevistas).
+
+============================================================
+7) REQUISITOS TÉCNICOS
+============================================================
+NLP: Azure Language Services ou OpenAI API (PT-BR, intents, entity extraction).
+Backend: Node.js (Express) ou Python (FastAPI).
+Banco de Dados: PostgreSQL (prod) ou SQLite (dev).
+Frontend: Web (React/Vite) ou mobile híbrido (React Native/Expo).
+Autenticação: Email + senha (MVP) ou OAuth.
+Infra: Docker (dev), vercel/railway/render para deploy rápido.
+Observabilidade: Logs estruturados, métricas, armazenamento de eventos de chat.
+
+============================================================
+8) ARQUITETURA (MVP)
+============================================================
+Camadas:
+- UI (Chat) → API Gateway → Serviço NLP → Serviço de Transações → DB
+- Serviço de Sugestões (heurísticas simples, executa pós-transação)
+- Serviço de Resumo (consulta agregada semanal/mensal)
+
+ASCII (alto nível):
+[Web/Mobile Chat]
+      |
+   HTTPS
+      |
+[API Backend] --(NLP)--> [NLP Provider]
+      |                     ^
+      v                     |
+   [DB - Transações, Categorias, Usuários]
+      |
+   [Sugestões/Resumo]
+
+============================================================
+9) MODELOS DE DADOS (SQL)
+============================================================
+Tabela users:
+- id (pk, uuid)
+- name (text)
+- email (text, unique)
+- created_at (timestamp)
+
+Tabela categories:
+- id (pk)
+- name (text, unique)  # Ex.: Alimentação, Transporte, Moradia, Lazer, Saúde, Educação, Outros
+- keywords (text[])    # ex.: ["mercado","supermercado","carrefour","pão de açúcar"]
+
+Tabela transactions:
+- id (pk, uuid)
+- user_id (fk users.id)
+- amount (numeric(12,2))    # positivo para despesa; (MVP: só despesas)
+- currency (text)           # "BRL"
+- description (text)
+- category_id (fk categories.id, null se indefinida)
+- occurred_at (date/time)
+- created_at (timestamp)
+- source (text)             # "chat"
+- nlp_confidence (numeric)  # 0-1
+
+Tabela budgets (futuro):
+- id (pk)
+- user_id
+- category_id
+- period (text)             # "weekly"|"monthly"
+- limit_amount (numeric)
+
+============================================================
+10) ENDPOINTS (MVP)
+============================================================
+POST /chat/message
+Body: { "userId": "...", "message": "Gastei R$50 no mercado" }
+Resp: {
+  "parsed": { "amount": 50.00, "currency": "BRL", "category": "Alimentação", "description": "mercado" },
+  "transaction": { ... },
+  "summary": { "week_spent": 320.75, "top_categories": [{name:"Alimentação",spent:180.20}] },
+  "suggestion": "Defina um limite semanal para Alimentação."
+}
+
+POST /transactions
+Body: { "userId":"...", "amount": 50.00, "currency":"BRL", "description":"mercado", "occurredAt":"2025-11-29T14:05:00-03:00" }
+
+GET /summary?userId=...&period=week
+Resp: { "periodStart":"2025-11-24", "periodEnd":"2025-11-30", "totalSpent": 540.00, "byCategory":[...] }
+
+GET /categories
+Resp: [ {id:1,name:"Alimentação"}, ... ]
+
+============================================================
+11) NLP (INTENTS E ENTIDADES)
+============================================================
+Intents:
+- add_expense: “gastei R$50 no mercado”, “paguei 120 de luz”, “comprei uber de 25”
+- ask_summary: “como está meu gasto?”, “resumo da semana”
+- ask_balance (MVP simples): “quanto gastei hoje?”, “saldo do mês”
+- misc_help: “como funciona?”, “o que posso perguntar?”
+
+Entidades:
+- amount: “R$50”, “50 reais”, “50,00”
+- category candidate: “mercado”, “uber”, “energia”
+- date/time: “hoje”, “ontem”, “terça”, “29/11”
+- merchant (futuro): nomes específicos (ex.: “Carrefour”, “Uber”)
+
+Regras de parsing (MVP):
+- Normalizar moeda BRL: aceitar “R$”, “reais”, separador decimal “,”.
+- Regex exemplos:
+  - Valor: r"(?:R\$|\b)\s*(\d{1,3}(?:\.\d{3})*(?:,\d{2})|\d+(?:,\d{2})?)"
+  - Data opcional: r"\b(hoje|ontem|amanhã|segunda|terça|quarta|quinta|sexta|sábado|domingo|\d{1,2}/\d{1,2}(?:/\d{2,4})?)\b"
+- Normalização: converter "50,00" → 50.00 (ponto como decimal internamente).
+
+Mapeamento de categorias (heurístico inicial):
+- Alimentação: ["mercado","supermercado","carrefour","pão de açúcar","ifood","restaurante"]
+- Transporte: ["uber","99","ônibus","metrô","gasolina","ipiranga"]
+- Moradia: ["aluguel","condomínio","energia","luz","água","internet","vivo","claro"]
+- Lazer: ["cinema","spotify","netflix","show","bar"]
+- Saúde: ["farmácia","consulta","plano","academia"]
+- Educação: ["curso","livro","faculdade","ufabc"]
+- Outros: fallback quando não há match.
+
+============================================================
+12) LÓGICA DE SUGESTÕES (MVP)
+============================================================
+Regras simples:
+- Se gasto semanal em uma categoria > média das últimas 4 semanas + 20% → sugerir limite semanal.
+- Se “Outros” > 25% do total → sugerir detalhar descrições para melhorar categorização.
+- Se gasto recorrente semelhante todo mês (ex.: “energia”, “internet”) → sugerir marcar como recorrente e acompanhar.
+Mensagens:
+- Tom amigável, objetivo, com ação clara (definir limite, revisar gastos, ajustar categoria).
+
+============================================================
+13) UI/UX (CHAT)
+============================================================
+- Balões arredondados; cores neutras; verde/azul para confirmações.
+- Mensagens estruturadas: valor + categoria + data + resumo.
+- Acessibilidade: contraste AA, teclas de atalho, labels claros, aria-live para mensagens.
+
+============================================================
+14) EXEMPLOS DE CONVERSA
+============================================================
+User: "Gastei R$50 no mercado"
+App: "Registrado: R$50 em Alimentação (mercado) hoje. Total da semana: R$180. Dica: quer definir limite semanal para Alimentação?"
+
+User: "Paguei R$120 de energia ontem"
+App: "Registrado: R$120 em Moradia (energia) ontem. Semana: R$300. Você costuma pagar energia todo mês; quer marcar como recorrente?"
+
+User: "Como está meu gasto esta semana?"
+App: "Resumo (24–30/11): Total R$540. Top categorias: Alimentação R$220, Moradia R$180, Transporte R$90. Sugestão: Alimentação +35% vs. média; definir limite?"
+
+============================================================
+15) PSEUDOCÓDIGO (PROCESSAMENTO DE MENSAGEM)
+============================================================
+function handleChatMessage(userId, message):
+  parsed = nlp.parse(message)   # amount, date, keywords
+  amount = normalizeBRL(parsed.amount)
+  date = resolveDate(parsed.date) or now()
+  description = extractDescription(parsed.keywords)
+  category = classify(description)  # regras + keywords
+  confidence = score(category, description)
+
+  tx = saveTransaction(userId, amount, "BRL", description, category, date, confidence)
+  summary = getWeeklySummary(userId, date.week)
+  suggestion = suggest(summary, category)
+
+  return { parsed, transaction: tx, summary, suggestion }
+
+============================================================
+16) ESTRUTURA DE PASTAS (REPO)
+============================================================
+/app
+  /frontend            # React/React Native (chat UI)
+  /backend             # API (Node/Express ou Python/FastAPI)
+    /src
+      controllers/
+      services/
+      nlp/
+      db/
+      routes/
+      tests/
+    .env.example
+  /infra               # Docker, compose, CI
+/docs                  # PRD, fluxos, decisões
+README.md
+LICENSE
+
+============================================================
+17) INSTRUÇÕES DE EXECUÇÃO (DEV, EXEMPLO FASTAPI)
+============================================================
+- Requisitos: Python 3.11, pip, Docker (opcional).
+- Passos:
+  1) cp backend/.env.example backend/.env  # configure DB_URL e keys de NLP
+  2) make dev (opcional) ou:
+     - pip install -r backend/requirements.txt
+     - uvicorn src.main:app --reload
+  3) Frontend:
+     - npm i && npm run dev
+- Testes:
+  - pytest (backend) / vitest (frontend)
+
+============================================================
+18) PRIVACIDADE E SEGURANÇA
+============================================================
+- Criptografar senhas (bcrypt).
+- Armazenar apenas o necessário (minimização de dados).
+- Logs sem PII sensível (mas com IDs).
+- LGPD: consentimento para processamento de dados, deleção sob solicitação.
+- Backups e controle de acesso por usuário.
+
+============================================================
+19) LOCALIZAÇÃO (PT-BR)
+============================================================
+- Formatação monetária: "R$ 1.234,56".
+- Datas: DD/MM/YYYY.
+- Mensagens em português simples; evitar jargões.
+
+============================================================
+20) ROADMAP FUTURO
+============================================================
+- Metas financeiras por categoria (semana/mês).
+- Relatórios avançados (tendências, comparativos).
+- Agente financeiro proativo (alertas, recomendações contextuais).
+- Importação de extratos (OFX/CSV) e reconciliação.
+- Análise de recorrência e assinaturas.
+- Multi-conta (cartão, conta corrente, carteira).
+- Notificações (push/email) com resumo.
+
+============================================================
+21) MÉTRICAS (IMPLEMENTAÇÃO)
+============================================================
+- event: transaction_created (userId, amount, category, timestamp)
+- event: summary_viewed
+- event: suggestion_shown / suggestion_accepted
+- Dashboards: conversões 1º dia, 1ª semana, retenção D30.
+
+============================================================
+22) VALIDACÃO (EXPERIMENTO)
+============================================================
+- Landing page com valor e demo do chat.
+- Métricas: CTR para experimentar, taxa de 1º registro, 5 registros/semana, NPS.
+- Entrevistas com 8–12 usuários iniciantes (qualitativo).
+- Iterar mensagens e heurísticas de sugestão.
+
+============================================================
+23) NOTAS FINAIS
+============================================================
+- Foco em simplicidade, rapidez de registro, e linguagem acessível.
+- Sempre responder com confirmação, resumo e possível ação (definir limite, revisar categoria).
+- Medir, aprender e iterar com feedback contínuo.
+```
+Resultado final com o Lovable: https://coin-convos.lovable.app
+
+<img width="1875" height="930" alt="image" src="https://github.com/user-attachments/assets/eacc3458-c963-4602-aa3c-37bb7dd006f1" />
+
+<img width="1868" height="922" alt="image" src="https://github.com/user-attachments/assets/4994c42b-1c54-416f-b3f9-8c212bddeac5" />
+
+<img width="1870" height="922" alt="image" src="https://github.com/user-attachments/assets/7f60f764-9dd3-4109-bd54-f5e85e0ac915" />
+
+
+Resumo:
+  Um app de finanças pessoais que transforma o controle financeiro em uma experiência conversacional. Em vez de formulários e planilhas, você registra seus gastos falando com o app, que classifica automaticamente as transações, mostra resumos claros e sugere formas simples de economizar. Ideal para quem quer começar a organizar suas finanças sem complicação.
+
+✅ Funcionalidades
+1. Registro de gastos via chat
+   Ex.: “Gastei R$50 no mercado”.
+     
+2. Classificação automática
+    Identifica a categoria (Alimentação, Transporte, Moradia, etc.).
+      
+3. Resumo financeiro no chat
+    Mostra total gasto e categorias (ex.: resumo semanal).
+      
+4. Sugestões simples de economia
+    Ex.: “Você gastou muito em alimentação esta semana, que tal definir um limite?”.
+
+### O que funcionou bem?
+  A classificação automática das transações por categoria torna o processo rápido e sem esforço manual.
+  
+  O tom educativo e amigável ajuda a engajar usuários sem parecer técnico demais.
+  
+  O PRD está bem detalhado, com fluxo claro e métricas definidas, o que facilita transformar em produto real.
+
+### O que não funcionou como esperado?
+  Falta integração com fontes externas
+  
+  A dependência de NLP pode gerar erros em frases
+  
+  Erros de design que posteriormente foram corrigidos
+
+### O que aprendeu sobre conversar com IAs?
+  É essencial dar contexto claro e estruturado
+  
+  Quanto mais específico e detalhado o pedido, melhor a qualidade do resultado
+  
+  A IA é ótima para organizar ideias, gerar documentação e protótipos, mas precisa de validação humana para nuances e experiência do usuário.
+  
+  Conversar com IA é como trabalhar com um parceiro criativo
+
+
